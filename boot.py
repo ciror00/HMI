@@ -32,35 +32,3 @@ while True:
             print(msj)
     else:
         pass
-
-'''
-RED = 'CYS'
-PASS = 'Informatica'
-
-station = network.WLAN(network.STA_IF)
-station.active(True)
-
-if not station.isconnected():
-    print('connecting to network...')
-    station.active(True)
-    station.connect(RED, PASS)
-    while not station.isconnected():
-        pass
-print('Configuracion de RED:', station.ifconfig())
-
-
-
-serial.write("Escaneando redes\n")
-redes = station.scan()
-for i in redes:
-    serial.write(str(i) + ".- " + i[0].decode('utf-8') + "\n")
-print('Leyendo puerto')
-serial.write("Hello, World!\n")
-while True:
-    msj = serial.readline()
-    if msj != None:
-        if msj == b'\r':
-            break
-        print(msj)
-        print(msj.decode('utf-8'))
-'''

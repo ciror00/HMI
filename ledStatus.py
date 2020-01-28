@@ -1,14 +1,14 @@
 import machine
 
 class Led:
-    def __init__(self):
+    def __init__(self, bluePin, greenPin, redPin):
         self.led = machine.Pin(2, machine.Pin.OUT, value=0)
         # Leds RGB
-        self.blue = machine.Pin(19, machine.Pin.OUT, value=0) # blue
-        self.green = machine.Pin(18, machine.Pin.OUT, value=0) # green
-        self.red = machine.Pin(15, machine.Pin.OUT, value=0) # red
+        self.blue = machine.Pin(bluePin, machine.Pin.OUT, value=0) # blue
+        self.green = machine.Pin(greenPin, machine.Pin.OUT, value=0) # green
+        self.red = machine.Pin(redPin, machine.Pin.OUT, value=0) # red
         self.colors = {"BLUE": [1,0,0], "GREEN": [0,1,0], "RED": [0,0,1], 
-            "CIAN": [1,1,0], "YELLOW": [0,1,1], "MAGENTA": [1,0,1], "WHITE": [1,1,1], "BLACK": [0,0,0]}
+            "CYAN": [1,1,0], "YELLOW": [0,1,1], "MAGENTA": [1,0,1], "ON": [1,1,1], "OFF": [0,0,0]}
 
     def status(self, state):
         self.led.value(state)

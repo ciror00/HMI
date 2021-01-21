@@ -1,0 +1,36 @@
+{
+    "sensors": {
+        "temperature": true,
+        "pressure": true,
+        "altitude": true,
+        "light": true,
+        "accelerometer": true,
+        "rotation": true
+    },
+    "network": {
+        "ssid": "",
+        "password": ""
+    },
+    "protocols":{
+        "mqtt": {
+            "state": true,
+            "broker": "",
+            "user": "",
+            "password": "",
+            "topic_pub": "cys/3c71bff0ad24/mediciones",
+            "topic_sub": "cys/3c71bff0ad24/mediciones",
+            "sv": "test-mosquitto.cysonline.com.ar"
+        },
+        "http": {
+            "state": false,
+            "header": "",
+            "endPoint": "",
+            "base_url": "localhost:3900/iot",
+            "token_auth": ""
+        }
+    },    
+    "parameters": {
+        "interval": 30
+    },
+    "model": "TEST-MODEL-001"
+}

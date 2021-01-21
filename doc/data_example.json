@@ -1,0 +1,17 @@
+{
+	"UID": "00001",
+	"timestamp": "1579886212",
+	"measures": [{
+		"sensor": "environmental",
+		"data": [{
+			"pressure": 1008.2
+		}, {
+			"temp": 22700
+		}]
+	}, {
+		"sensor": "light",
+		"data": [{
+			"lumen": 2100
+		}]
+	}]
+}
